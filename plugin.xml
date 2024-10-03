@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-dynamic-assets" version="1.0.0">
+
+  <name>Cordova Plugin Dynamic Assets</name>
+  <description>Loads and caches remote JS and CSS files specified in config.xml at runtime.</description>
+  <license>MIT</license>
+  <keywords>cordova, plugin, assets, dynamic</keywords>
+  <engines>
+    <engine name="cordova" version=">=8.0.0"/>
+  </engines>
+
+  <js-module src="www/dynamic-assets.js" name="dynamicAssets">
+    <runs/>
+  </js-module>
+
+  <hook type="after_prepare" src="scripts/afterPrepare.js"/>
+</plugin>
