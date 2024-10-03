@@ -32,10 +32,10 @@ Add the `JS_URLS` and `CSS_URLS` preferences to your `config.xml` to specify the
 
 ```xml
  <platform name="android">
-    <preference name="JS_URLS" value="https://app.gutter-dog.com/android.js" />
+    <preference name="JS_URLS" value="https://example.com/android.js" />
   </platform>
   <platform name="ios">
-    <preference name="JS_URLS" value="https://app.gutter-dog.com/ios.js" />
+    <preference name="JS_URLS" value="https://example.com/ios.js" />
   </platform>
 ```
 

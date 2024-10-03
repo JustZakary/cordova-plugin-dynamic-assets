@@ -2,10 +2,30 @@
   "name": "cordova-plugin-dynamic-assets",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "cordova": {
+    "id": "cordova-plugin-dynamic-assets",
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ]
   },
-  "author": "",
-  "license": "ISC"
+  "repository": "github:JustZakary/cordova-plugin-dynamic-assets",
+  "bugs": "https://github.com/JustZakary/cordova-plugin-dynamic-assets/issues",
+  "keywords": [
+    "cordova",
+    "dynamic",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Zakary Loney",
+  "license": "MIT",
+  "engines": {
+    "cordovaDependencies": {
+      "4.0.0": {
+        "cordova": ">100"
+      }
+    }
+  }
 }
