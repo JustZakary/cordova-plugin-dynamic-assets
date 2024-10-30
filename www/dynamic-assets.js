@@ -11,7 +11,7 @@ function onDeviceReady() {
           .then((data) => {
             localStorage.setItem(script.js_name, data);
             scriptEl.text = data;
-            document.body.appendChild(script);
+            document.body.appendChild(scriptEl);
           })
           .catch(() => {
             if (localStorage.getItem(script.js_name)) {
@@ -19,7 +19,7 @@ function onDeviceReady() {
             } else {
               scriptEl.src = `./dynamic/${script.js_name}`;
             }
-            document.body.appendChild(script);
+            document.body.appendChild(scriptEl);
           });
       });
 
