@@ -4,8 +4,6 @@ function onDeviceReady() {
   fetch('./dynamic_assets.json')
     .then((response) => response.json())
     .then((dynamicAssets) => {
-      console.log('onDeviceReady');
-      alert('onDeviceReady');
       dynamicAssets.scripts.forEach(function (script) {
         const scriptEl = document.createElement('script');
         fetch(script.url)
